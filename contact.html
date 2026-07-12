@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Dr. Aneesh Sabnis</title>
+    <meta name="description" content="Get in touch with Dr. Aneesh Sabnis. Find contact information, clinic locations, and hours.">
+    <meta name="theme-color" content="#0F5E9C">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://draneeshsabnis.com/contact.html">
+    <meta property="og:title" content="Contact - Dr. Aneesh Sabnis">
+    <meta property="og:description" content="Contact Dr. Aneesh Sabnis for appointments, questions, or clinic inquiries.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://draneeshsabnis.com/contact.html">
+    <meta property="og:image" content="https://draneeshsabnis.com/images/draneeslogo.jpeg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact - Dr. Aneesh Sabnis">
+    <meta name="twitter:description" content="Contact Dr. Aneesh Sabnis for appointments, questions, or clinic inquiries.">
+    <meta name="twitter:image" content="https://draneeshsabnis.com/images/draneeslogo.jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0F5E9C',
+                        secondary: '#2B7FC4',
+                        accent: '#00A6A6',
+                    },
+                    fontFamily: {
+                        display: ['Playfair Display', 'serif'],
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                },
+            },
+        };
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar"></nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container mx-auto mt-20 px-4 sm:px-6 lg:px-8">
+            <h1 class="page-title" style="font-family: 'Playfair Display', serif;">Contact Us</h1>
+            <p class="text-gray-200">Get in Touch with Our Team</p>
+        </div>
+    </section>
+
+    <!-- Quick Contact Info -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div class="contact-card" data-aos="fade-up">
+                    <div class="contact-card-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Phone</h3>
+                    <p><a href="tel:9833966967">9833966967</a></p>
+                    <p class="text-xs text-gray-500">Call anytime during clinic hours</p>
+                </div>
+
+                <div class="contact-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="contact-card-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p><a href="mailto:anesab9@gmail.com">anesab9@gmail.com</a></p>
+                    <p class="text-xs text-gray-500">We'll respond within 24 hours</p>
+                </div>
+
+                <div class="contact-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="contact-card-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Hours</h3>
+                    <p>Mon-Sat: 10 AM - 6 PM</p>
+                    <p class="text-xs text-gray-500">Sundays: Closed</p>
+                </div>
+
+                <div class="contact-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="contact-card-icon">
+                        <i class="fas fa-hospital"></i>
+                    </div>
+                    <h3>Hospitals</h3>
+                    <p>6+ Affiliated Centers</p>
+                    <p class="text-xs text-gray-500">See details below</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Contact Section -->
+    <section class="py-20 bg-gradient-to-br from-[#F8FAFC] to-[#E0F2FE]">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                <!-- Contact Form -->
+                <div data-aos="fade-right">
+                    <div class="form-container">
+                        <h2 class="text-2xl font-bold text-[#0F5E9C] mb-2" style="font-family: 'Playfair Display', serif;">Send us a Message</h2>
+                        <p class="text-gray-600 mb-8">Have a question or inquiry? Fill out the form below and we'll get back to you soon.</p>
+
+                        <form id="contactForm" class="space-y-6" action="/form/contact-form" method="POST">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div class="form-group">
+                                    <label for="contactName">Your Name *</label>
+                                    <input type="text" id="contactName" name="contactName" placeholder="Your Name" autocomplete="name" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="contactEmail">Email Address *</label>
+                                    <input type="email" id="contactEmail" name="contactEmail" placeholder="Your Email" autocomplete="email" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contactPhone">Phone Number</label>
+                                <input type="tel" id="contactPhone" name="contactPhone" placeholder="Your Phone (Optional)">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contactSubject">Subject *</label>
+                                <input type="text" id="contactSubject" name="contactSubject" placeholder="What is your message about?" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contactMessage">Message *</label>
+                                <textarea id="contactMessage" name="contactMessage" placeholder="Your message here..." rows="6" required></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="contactTerms" name="contactTerms" required>
+                                    <span>I consent to being contacted regarding this inquiry</span>
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn-primary w-full">
+                                <i class="fas fa-paper-plane"></i>
+                                Send Message
+                            </button>
+                        </form>
+
+                        <div id="contactSuccessMessage" class="hidden bg-green-50 border border-green-200 rounded-lg p-6 mt-6">
+                            <div class="flex items-center gap-4">
+                                <i class="fas fa-check-circle text-green-600 text-2xl"></i>
+                                <div>
+                                    <h4 class="font-bold text-green-900">Message Sent Successfully!</h4>
+                                    <p class="text-green-800 text-sm">Thank you for reaching out. We'll be in touch within 24 hours.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Information Section -->
+                <div data-aos="fade-left" class="space-y-8">
+                    <div>
+                        <h2 class="text-2xl font-bold text-[#0F5E9C] mb-6" style="font-family: 'Playfair Display', serif;">Contact Information</h2>
+                        
+                        <div class="info-section mb-8">
+                            <h3 class="font-bold text-[#0F5E9C] mb-3">Direct Contact</h3>
+                            <div class="space-y-2 text-gray-700">
+                                <p><strong>Dr. Aneesh Sabnis</strong></p>
+                                <p>Consultant Gynaecologist & Obstetrician</p>
+                                <p><a href="tel:9833966967" class="text-[#2B7FC4] hover:underline">Phone: 9833966967</a></p>
+                                <p><a href="mailto:anesab9@gmail.com" class="text-[#2B7FC4] hover:underline">Email: anesab9@gmail.com</a></p>
+                            </div>
+                        </div>
+
+                        <div class="info-section mb-8">
+                            <h3 class="font-bold text-[#0F5E9C] mb-3">Clinic Hours</h3>
+                            <div class="space-y-2 text-gray-700">
+                                <div class="flex justify-between">
+                                    <span>Monday - Friday:</span>
+                                    <span>10:00 AM - 6:00 PM</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>Saturday:</span>
+                                    <span>10:00 AM - 4:00 PM</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>Sunday:</span>
+                                    <span class="text-red-600">Closed</span>
+                                </div>
+                                <p class="text-sm text-gray-500 mt-2">Emergency services available 24/7 at affiliated hospitals</p>
+                            </div>
+                        </div>
+
+                        <div class="info-section">
+                            <h3 class="font-bold text-[#0F5E9C] mb-3">Response Time</h3>
+                            <div class="space-y-2 text-gray-700">
+                                <p><i class="fas fa-check text-[#2B7FC4]"></i> Email responses within 24 hours</p>
+                                <p><i class="fas fa-check text-[#2B7FC4]"></i> Phone calls answered during clinic hours</p>
+                                <p><i class="fas fa-check text-[#2B7FC4]"></i> Emergency queries handled immediately</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Media (placeholder) -->
+                    <div class="bg-white rounded-lg p-6 border border-gray-200">
+                        <h3 class="font-bold text-[#0F5E9C] mb-4">Connect With Us</h3>
+                        <p class="text-gray-600 text-sm mb-4">Follow us for health tips and updates</p>
+                        <div class="flex gap-4">
+                            <a href="#" class="social-icon" title="Facebook">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#" class="social-icon" title="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-icon" title="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="#" class="social-icon" title="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hospital Network Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="section-title text-center mb-16" data-aos="fade-up">Our Hospital Network</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="hospital-location-card" data-aos="fade-up">
+                    <div class="hospital-icon">
+                        <i class="fas fa-hospital"></i>
+                    </div>
+                    <h3>Sneh Nursing Home</h3>
+                    <p class="text-gray-600 text-sm mb-4">Specialized obstetrics and gynecology facility with comprehensive care services.</p>
+                    <a href="tel:9833966967" class="text-[#2B7FC4] text-sm hover:underline">
+                        <i class="fas fa-phone"></i> Contact Now
+                    </a>
+                </div>
+
+                <div class="hospital-location-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="hospital-icon">
+                        <i class="fas fa-hospital"></i>
+                    </div>
+                    <h3>Nanavati Max Super Speciality</h3>
+                    <p class="text-gray-600 text-sm mb-4">Multi-specialty tertiary care center with advanced diagnostic and surgical facilities.</p>
+                    <a href="tel:9833966967" class="text-[#2B7FC4] text-sm hover:underline">
+                        <i class="fas fa-phone"></i> Contact Now
+                    </a>
+                </div>
+
+                <div class="hospital-location-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="hospital-icon">
+                        <i class="fas fa-hospital"></i>
+                    </div>
+                    <h3>Surya Hospital</h3>
+                    <p class="text-gray-600 text-sm mb-4">Leading healthcare provider with comprehensive gynecological services and ICU facilities.</p>
+                    <a href="tel:9833966967" class="text-[#2B7FC4] text-sm hover:underline">
+                        <i class="fas fa-phone"></i> Contact Now
+                    </a>
+                </div>
+
+                <div class="hospital-location-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="hospital-icon">
+                        <i class="fas fa-hospital"></i>
+                    </div>
+                    <h3>Criticare Asia Hospital</h3>
+                    <p class="text-gray-600 text-sm mb-4">Advanced critical care facility with 24/7 emergency obstetric services.</p>
+                    <a href="tel:9833966967" class="text-[#2B7FC4] text-sm hover:underline">
+                        <i class="fas fa-phone"></i> Contact Now
+                    </a>
+                </div>
+
+                <div class="hospital-location-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="hospital-icon">
+                        <i class="fas fa-hospital"></i>
+                    </div>
+                    <h3>BSES MG Hospital</h3>
+                    <p class="text-gray-600 text-sm mb-4">Quality healthcare provider with specialized gynecological and obstetric departments.</p>
+                    <a href="tel:9833966967" class="text-[#2B7FC4] text-sm hover:underline">
+                        <i class="fas fa-phone"></i> Contact Now
+                    </a>
+                </div>
+
+                <div class="hospital-location-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="hospital-icon">
+                        <i class="fas fa-hospital"></i>
+                    </div>
+                    <h3>Holy Spirit Hospital</h3>
+                    <p class="text-gray-600 text-sm mb-4">Comprehensive medical center with dedicated women's health and maternity services.</p>
+                    <a href="tel:9833966967" class="text-[#2B7FC4] text-sm hover:underline">
+                        <i class="fas fa-phone"></i> Contact Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Map Section -->
+    <section class="py-20 bg-gradient-to-br from-[#F8FAFC] to-[#E0F2FE]">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="section-title text-center mb-8" data-aos="fade-up">Find Us</h2>
+            
+            <div class="rounded-lg overflow-hidden shadow-lg" data-aos="fade-up">
+                <iframe 
+                    width="100%" 
+                    height="400" 
+                    frameborder="0" 
+                    style="border:0; border-radius: 8px;" 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.878487127854!2d72.8326!3d19.0760!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9c5c5c5c5c5%3A0x5c5c5c5c5c5c5c5c!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1234567890" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+            <div class="mt-8 text-center">
+                <p class="text-gray-600 text-lg">
+                    <i class="fas fa-map-marker-alt text-[#D4AF37] mr-2"></i>
+                    Serving patients across Mumbai and nearby areas with access to leading multi-specialty hospitals
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl">
+            <h2 class="section-title text-center mb-16" data-aos="fade-up">Contact FAQ</h2>
+
+            <div class="space-y-4" data-aos="fade-up">
+                <div class="faq-item">
+                    <button class="faq-header">
+                        <span>What's the best way to reach Dr. Aneesh?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-content">
+                        <p>For appointments, call 9833966967 during clinic hours (Mon-Sat, 10 AM - 6 PM). For general inquiries, email anesab9@gmail.com and we'll respond within 24 hours.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-header">
+                        <span>Can I leave a message outside clinic hours?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-content">
+                        <p>Yes, you can use our contact form or send an email. We'll get back to you the next business day. For emergencies, please go to your nearest hospital emergency department.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-header">
+                        <span>Do you accept messages through WhatsApp?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-content">
+                        <p>For urgent queries, you can try WhatsApp or SMS to the provided phone number. However, for detailed discussions and appointment confirmations, please call directly or use email.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-header">
+                        <span>How do I get directions to a specific hospital?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-content">
+                        <p>Call us and let us know which hospital location you're going to. We'll provide you with detailed directions and parking information. You can also use Google Maps to find the hospital addresses.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-header">
+                        <span>What should I include in my inquiry email?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-content">
+                        <p>Please include your full name, contact information, brief description of your health concern, and preferred hospital location. This helps us respond promptly and accurately to your inquiry.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-header">
+                        <span>Is there an emergency contact number?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-content">
+                        <p>For gynecological emergencies, go directly to your nearest hospital emergency department. Our affiliated hospitals have 24/7 emergency obstetric services. You can also call the hospital directly where you have your records.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-[#0F5E9C] via-[#2B7FC4] to-[#00A6A6]" data-aos="fade-up">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-8" style="font-family: 'Playfair Display', serif;">Ready to Get in Touch?</h2>
+            <p class="text-xl text-white/90 mb-8">Reach out today and let's discuss your healthcare needs</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="tel:9833966967" class="btn-primary bg-white text-[#0F5E9C] hover:bg-slate-400">
+                    <i class="fas fa-phone"></i>
+                    Call Now
+                </a>
+                <button class="btn-secondary border-2 border-white text-white hover:bg-white hover:text-white" onclick="window.location.href='appointment.html'">
+                    <i class="fas fa-calendar"></i>
+                    Book Appointment
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer"></footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        const contactForm = document.getElementById('contactForm');
+
+        if (contactForm) {
+            contactForm.addEventListener('submit', function() {
+                const submitButton = this.querySelector('button[type="submit"]');
+                if (submitButton) {
+                    submitButton.disabled = true;
+                    submitButton.classList.add('is-loading');
+                    submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+                }
+            });
+        }
+
+        // FAQ accordion
+        const faqHeaders = document.querySelectorAll('.faq-header');
+        faqHeaders.forEach(header => {
+            header.addEventListener('click', function() {
+                const faqItem = this.parentElement;
+                const isActive = faqItem.classList.contains('active');
+                
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    item.classList.remove('active');
+                });
+                
+                if (!isActive) {
+                    faqItem.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+

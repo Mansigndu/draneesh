@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Dr. Aneesh Sabnis</title>
+    <meta name="description" content="View our state-of-the-art medical facilities and clinic environment.">
+    <meta name="theme-color" content="#0F5E9C">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://draneeshsabnis.com/gallery.html">
+    <meta property="og:title" content="Gallery - Dr. Aneesh Sabnis">
+    <meta property="og:description" content="Take a look at our modern clinic spaces, operating theaters, and ultrasound facilities.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://draneeshsabnis.com/gallery.html">
+    <meta property="og:image" content="https://draneeshsabnis.com/images/draneeslogo.jpeg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Gallery - Dr. Aneesh Sabnis">
+    <meta name="twitter:description" content="Take a look at our modern clinic spaces, operating theaters, and ultrasound facilities.">
+    <meta name="twitter:image" content="https://draneeshsabnis.com/images/draneeslogo.jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0F5E9C',
+                        secondary: '#2B7FC4',
+                        accent: '#00A6A6',
+                    },
+                    fontFamily: {
+                        display: ['Playfair Display', 'serif'],
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                },
+            },
+        };
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar"></nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container mx-auto mt-20 px-4 sm:px-6 lg:px-8">
+            <h1 class="page-title" style="font-family: 'Playfair Display', serif;">Gallery</h1>
+            <p class="text-gray-200">Explore Our State-of-the-Art Facilities</p>
+        </div>
+    </section>
+
+    <!-- Gallery Intro -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl text-center">
+            <h2 class="section-title mb-6" data-aos="fade-up">Our Modern Facilities</h2>
+            <p class="text-gray-600 text-lg" data-aos="fade-up">
+                We maintain state-of-the-art medical facilities equipped with the latest technology to provide the highest standard of gynecological and obstetric care. Our clinics are designed to create a comfortable, welcoming environment where patients feel safe and cared for.
+            </p>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="py-20 bg-gradient-to-br from-[#F8FAFC] to-[#E0F2FE]">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Filter Buttons -->
+            <div class="flex justify-center gap-4 mb-12 flex-wrap" data-aos="fade-up">
+                <button class="gallery-filter active" data-filter="all">All</button>
+                <button class="gallery-filter" data-filter="operation">Operation Theatre</button>
+                <button class="gallery-filter" data-filter="clinic">Clinic</button>
+                <button class="gallery-filter" data-filter="ultrasound">Ultrasound</button>
+                <button class="gallery-filter" data-filter="consultation">Consultation</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Image 1 -->
+                <div class="gallery-item" data-filter="operation" data-aos="fade-up">
+                    <div class="gallery-card">
+                        <svg viewBox="0 0 300 250" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+                            <defs>
+                                <linearGradient id="op-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#0F5E9C;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#2B7FC4;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <!-- Background -->
+                            <rect width="300" height="250" fill="#f0f9ff"/>
+                            <!-- OT Lights -->
+                            <circle cx="75" cy="30" r="20" fill="#FFD700" opacity="0.9"/>
+                            <circle cx="150" cy="20" r="20" fill="#FFD700" opacity="0.9"/>
+                            <circle cx="225" cy="30" r="20" fill="#FFD700" opacity="0.9"/>
+                            <!-- Surgical Table -->
+                            <rect x="50" y="100" width="200" height="80" fill="#E8E8E8" stroke="#999" stroke-width="2" rx="10"/>
+                            <!-- Surgical Instruments -->
+                            <circle cx="260" cy="120" r="8" fill="#C0C0C0"/>
+                            <circle cx="270" cy="130" r="7" fill="#C0C0C0"/>
+                            <circle cx="265" cy="145" r="6" fill="#C0C0C0"/>
+                            <!-- Monitor -->
+                            <rect x="20" y="60" width="50" height="40" fill="#2C3E50" stroke="#000" stroke-width="2" rx="3"/>
+                            <rect x="25" y="65" width="40" height="30" fill="#00D4AA"/>
+                            <!-- Caption -->
+                            <text x="150" y="220" text-anchor="middle" font-family="Poppins" font-size="14" font-weight="600" fill="#0F5E9C">Advanced OT Suite</text>
+                            <text x="150" y="238" text-anchor="middle" font-family="Poppins" font-size="11" fill="#666">State-of-the-art surgical facilities</text>
+                        </svg>
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 2 -->
+                <div class="gallery-item" data-filter="ultrasound" data-aos="fade-up" data-aos-delay="100">
+                    <div class="gallery-card">
+                        <svg viewBox="0 0 300 250" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+                            <!-- Background -->
+                            <rect width="300" height="250" fill="#f5f0ff"/>
+                            <!-- Ultrasound Machine -->
+                            <rect x="30" y="80" width="120" height="100" fill="#333" stroke="#000" stroke-width="2" rx="5"/>
+                            <!-- Screen -->
+                            <rect x="40" y="90" width="100" height="70" fill="#000"/>
+                            <rect x="45" y="95" width="90" height="60" fill="#1a1a1a"/>
+                            <!-- Ultrasound Pattern on Screen -->
+                            <circle cx="90" cy="125" r="20" fill="#00D4AA" opacity="0.3"/>
+                            <circle cx="90" cy="125" r="15" fill="#2B7FC4" opacity="0.5"/>
+                            <!-- Controls -->
+                            <circle cx="50" cy="165" r="6" fill="#666"/>
+                            <circle cx="70" cy="165" r="6" fill="#666"/>
+                            <circle cx="90" cy="165" r="6" fill="#666"/>
+                            <circle cx="110" cy="165" r="6" fill="#666"/>
+                            <!-- Probe -->
+                            <rect x="160" y="100" width="15" height="80" fill="#555" stroke="#000" stroke-width="1" rx="7"/>
+                            <circle cx="167.5" cy="110" r="10" fill="#999"/>
+                            <!-- Patient Bed -->
+                            <rect x="180" y="130" width="80" height="50" fill="#E8D5C4" stroke="#999" stroke-width="1" rx="3"/>
+                            <!-- Caption -->
+                            <text x="150" y="220" text-anchor="middle" font-family="Poppins" font-size="14" font-weight="600" fill="#0F5E9C">Advanced Ultrasound</text>
+                            <text x="150" y="238" text-anchor="middle" font-family="Poppins" font-size="11" fill="#666">High-resolution imaging technology</text>
+                        </svg>
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 3 -->
+                <div class="gallery-item" data-filter="clinic" data-aos="fade-up" data-aos-delay="200">
+                    <div class="gallery-card">
+                        <svg viewBox="0 0 300 250" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+                            <!-- Background -->
+                            <rect width="300" height="250" fill="#fff5f0"/>
+                            <!-- Clinic Counter -->
+                            <rect x="10" y="180" width="280" height="50" fill="#8B7355" stroke="#654321" stroke-width="2"/>
+                            <rect x="15" y="185" width="270" height="40" fill="#A0826D"/>
+                            <!-- Reception Desk Items -->
+                            <rect x="40" y="160" width="40" height="25" fill="#D4AF37"/>
+                            <text x="60" y="177" text-anchor="middle" font-family="Poppins" font-size="10" fill="#000">Desk</text>
+                            <!-- Monitor on desk -->
+                            <rect x="120" y="155" width="50" height="35" fill="#2C3E50" stroke="#000" stroke-width="1" rx="2"/>
+                            <rect x="125" y="160" width="40" height="25" fill="#00D4AA"/>
+                            <!-- Chairs -->
+                            <rect x="200" y="140" width="25" height="25" fill="#2B7FC4" rx="3"/>
+                            <rect x="230" y="140" width="25" height="25" fill="#2B7FC4" rx="3"/>
+                            <!-- Waiting Area Seats -->
+                            <rect x="25" y="80" width="30" height="25" fill="#8B5A2B" rx="3"/>
+                            <rect x="70" y="85" width="30" height="25" fill="#8B5A2B" rx="3"/>
+                            <!-- Decorative Plant -->
+                            <circle cx="240" cy="100" r="15" fill="#228B22"/>
+                            <line x1="240" y1="100" x2="240" y2="130" stroke="#654321" stroke-width="2"/>
+                            <!-- Sign -->
+                            <rect x="100" y="20" width="100" height="30" fill="#0F5E9C" stroke="#000" stroke-width="2" rx="5"/>
+                            <text x="150" y="42" text-anchor="middle" font-family="Poppins" font-size="12" font-weight="600" fill="#FFF">Clinic Space</text>
+                            <!-- Caption -->
+                            <text x="150" y="220" text-anchor="middle" font-family="Poppins" font-size="14" font-weight="600" fill="#0F5E9C">Modern Clinic Design</text>
+                            <text x="150" y="238" text-anchor="middle" font-family="Poppins" font-size="11" fill="#666">Comfortable waiting and consultation areas</text>
+                        </svg>
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 4 -->
+                <div class="gallery-item" data-filter="consultation" data-aos="fade-up" data-aos-delay="300">
+                    <div class="gallery-card">
+                        <svg viewBox="0 0 300 250" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+                            <!-- Background -->
+                            <rect width="300" height="250" fill="#f0f8ff"/>
+                            <!-- Window -->
+                            <rect x="220" y="30" width="60" height="80" fill="#87CEEB" stroke="#666" stroke-width="2"/>
+                            <line x1="250" y1="30" x2="250" y2="110" stroke="#666" stroke-width="1"/>
+                            <line x1="220" y1="70" x2="280" y2="70" stroke="#666" stroke-width="1"/>
+                            <!-- Wall Decoration -->
+                            <rect x="20" y="40" width="60" height="50" fill="#E8E8E8" stroke="#999" stroke-width="1" rx="5"/>
+                            <text x="50" y="72" text-anchor="middle" font-family="Poppins" font-size="10" fill="#666">Certificate</text>
+                            <!-- Consultation Table -->
+                            <rect x="50" y="160" width="150" height="60" fill="#D2B48C" stroke="#8B7355" stroke-width="2" rx="5"/>
+                            <!-- Doctor -->
+                            <circle cx="80" cy="100" r="20" fill="#F4A460"/>
+                            <rect x="60" y="120" width="40" height="40" fill="#FFF" stroke="#999" stroke-width="1"/>
+                            <!-- Patient -->
+                            <circle cx="200" cy="100" r="20" fill="#F4A460"/>
+                            <rect x="180" y="120" width="40" height="40" fill="#FFB6C1" stroke="#999" stroke-width="1"/>
+                            <!-- Medical Equipment -->
+                            <line x1="120" y1="130" x2="120" y2="160" stroke="#666" stroke-width="2"/>
+                            <circle cx="125" cy="135" r="8" fill="#D4AF37"/>
+                            <!-- Caption -->
+                            <text x="150" y="220" text-anchor="middle" font-family="Poppins" font-size="14" font-weight="600" fill="#0F5E9C">Consultation Room</text>
+                            <text x="150" y="238" text-anchor="middle" font-family="Poppins" font-size="11" fill="#666">Private and comfortable consultation space</text>
+                        </svg>
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 5 -->
+                <div class="gallery-item" data-filter="operation" data-aos="fade-up" data-aos-delay="400">
+                    <div class="gallery-card">
+                        <svg viewBox="0 0 300 250" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+                            <!-- Background -->
+                            <rect width="300" height="250" fill="#f5f5f5"/>
+                            <!-- Surgical Lights -->
+                            <circle cx="70" cy="40" r="18" fill="#FFE4B5" stroke="#FF8C00" stroke-width="2"/>
+                            <circle cx="150" cy="30" r="20" fill="#FFE4B5" stroke="#FF8C00" stroke-width="2"/>
+                            <circle cx="230" cy="40" r="18" fill="#FFE4B5" stroke="#FF8C00" stroke-width="2"/>
+                            <!-- Light Stands -->
+                            <line x1="70" y1="60" x2="70" y2="100" stroke="#333" stroke-width="2"/>
+                            <line x1="150" y1="52" x2="150" y2="100" stroke="#333" stroke-width="2"/>
+                            <line x1="230" y1="60" x2="230" y2="100" stroke="#333" stroke-width="2"/>
+                            <!-- Surgical Table -->
+                            <rect x="50" y="120" width="200" height="70" fill="#E0E0E0" stroke="#999" stroke-width="2" rx="8"/>
+                            <!-- Instrument Tray -->
+                            <rect x="15" y="130" width="25" height="50" fill="#C0C0C0" stroke="#999" stroke-width="1" rx="2"/>
+                            <circle cx="22" cy="140" r="4" fill="#999"/>
+                            <circle cx="22" cy="152" r="4" fill="#999"/>
+                            <circle cx="22" cy="164" r="4" fill="#999"/>
+                            <!-- Monitor -->
+                            <rect x="260" y="100" width="35" height="50" fill="#1a1a1a" stroke="#000" stroke-width="1" rx="2"/>
+                            <rect x="265" y="105" width="25" height="35" fill="#00AA00"/>
+                            <!-- Caption -->
+                            <text x="150" y="220" text-anchor="middle" font-family="Poppins" font-size="14" font-weight="600" fill="#0F5E9C">Surgical Excellence</text>
+                            <text x="150" y="238" text-anchor="middle" font-family="Poppins" font-size="11" fill="#666">Professional operating theater setup</text>
+                        </svg>
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 6 -->
+                <div class="gallery-item" data-filter="ultrasound" data-aos="fade-up" data-aos-delay="500">
+                    <div class="gallery-card">
+                        <svg viewBox="0 0 300 250" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+                            <!-- Background -->
+                            <rect width="300" height="250" fill="#fffacd"/>
+                            <!-- Medical Trolley -->
+                            <rect x="40" y="100" width="100" height="80" fill="#E8E8E8" stroke="#999" stroke-width="2" rx="5"/>
+                            <!-- Equipment on Trolley -->
+                            <rect x="50" y="110" width="35" height="30" fill="#2C3E50" stroke="#000" stroke-width="1" rx="3"/>
+                            <rect x="90" y="110" width="35" height="30" fill="#2C3E50" stroke="#000" stroke-width="1" rx="3"/>
+                            <!-- Display Screens -->
+                            <rect x="55" y="115" width="25" height="20" fill="#00D4AA"/>
+                            <rect x="95" y="115" width="25" height="20" fill="#00D4AA"/>
+                            <!-- Control Panel -->
+                            <rect x="50" y="145" width="35" height="25" fill="#666" stroke="#000" stroke-width="1" rx="2"/>
+                            <circle cx="58" cy="152" r="3" fill="#FFD700"/>
+                            <circle cx="68" cy="152" r="3" fill="#FFD700"/>
+                            <circle cx="75" cy="157" r="2" fill="#FFD700"/>
+                            <!-- Wheels -->
+                            <circle cx="50" cy="185" r="8" fill="#333"/>
+                            <circle cx="90" cy="185" r="8" fill="#333"/>
+                            <!-- Connected Monitor -->
+                            <rect x="180" y="80" width="80" height="70" fill="#1a1a1a" stroke="#000" stroke-width="2" rx="3"/>
+                            <rect x="190" y="90" width="60" height="50" fill="#000"/>
+                            <!-- Monitor Display Content -->
+                            <circle cx="220" cy="120" r="15" fill="#2B7FC4" opacity="0.6"/>
+                            <path d="M 210 120 L 230 120 M 220 110 L 220 130" stroke="#00D4AA" stroke-width="1"/>
+                            <!-- Caption -->
+                            <text x="150" y="220" text-anchor="middle" font-family="Poppins" font-size="14" font-weight="600" fill="#0F5E9C">Diagnostic Equipment</text>
+                            <text x="150" y="238" text-anchor="middle" font-family="Poppins" font-size="11" fill="#666">Latest technology for patient care</text>
+                        </svg>
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 7 -->
+                <div class="gallery-item" data-filter="clinic" data-aos="fade-up" data-aos-delay="600">
+                    <div class="gallery-card">
+                        <svg viewBox="0 0 300 250" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+                            <!-- Background -->
+                            <rect width="300" height="250" fill="#fafaf0"/>
+                            <!-- Reception Area -->
+                            <rect x="20" y="80" width="260" height="120" fill="#f0f0f0" stroke="#ddd" stroke-width="2" rx="10"/>
+                            <!-- Counter -->
+                            <rect x="30" y="140" width="240" height="40" fill="#D2B48C" stroke="#8B7355" stroke-width="2" rx="5"/>
+                            <!-- Reception Computer -->
+                            <rect x="50" y="110" width="50" height="35" fill="#2C3E50" stroke="#000" stroke-width="1" rx="2"/>
+                            <rect x="55" y="115" width="40" height="25" fill="#00D4AA"/>
+                            <!-- Stool -->
+                            <circle cx="80" cy="150" r="8" fill="#8B5A2B"/>
+                            <!-- Visitors -->
+                            <circle cx="150" cy="95" r="12" fill="#F4A460"/>
+                            <rect x="140" y="110" width="20" height="25" fill="#FFF"/>
+                            <!-- Plant -->
+                            <circle cx="240" cy="105" r="12" fill="#228B22"/>
+                            <!-- Information Sign -->
+                            <rect x="100" y="25" width="100" height="30" fill="#0F5E9C" stroke="#000" stroke-width="1" rx="3"/>
+                            <text x="150" y="45" text-anchor="middle" font-family="Poppins" font-size="11" font-weight="600" fill="#FFF">Welcome</text>
+                            <!-- Caption -->
+                            <text x="150" y="220" text-anchor="middle" font-family="Poppins" font-size="14" font-weight="600" fill="#0F5E9C">Reception Area</text>
+                            <text x="150" y="238" text-anchor="middle" font-family="Poppins" font-size="11" fill="#666">Warm welcome for every patient</text>
+                        </svg>
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 8 -->
+                <div class="gallery-item" data-filter="consultation" data-aos="fade-up" data-aos-delay="700">
+                    <div class="gallery-card">
+                        <svg viewBox="0 0 300 250" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+                            <!-- Background -->
+                            <rect width="300" height="250" fill="#f0f4f8"/>
+                            <!-- Doctor at Desk -->
+                            <circle cx="80" cy="80" r="18" fill="#F4A460"/>
+                            <rect x="65" y="100" width="30" height="35" fill="#2B7FC4"/>
+                            <!-- Patient -->
+                            <circle cx="200" cy="90" r="18" fill="#F4A460"/>
+                            <rect x="185" y="110" width="30" height="35" fill="#FFB6C1"/>
+                            <!-- Consultation Desk -->
+                            <rect x="50" y="150" width="200" height="60" fill="#D2B48C" stroke="#8B7355" stroke-width="2" rx="8"/>
+                            <!-- Documents on Desk -->
+                            <rect x="80" y="160" width="30" height="40" fill="#FFF" stroke="#999" stroke-width="1" rx="2"/>
+                            <line x1="85" y1="170" x2="105" y2="170" stroke="#999" stroke-width="1"/>
+                            <line x1="85" y1="180" x2="105" y2="180" stroke="#999" stroke-width="1"/>
+                            <!-- Stethoscope -->
+                            <path d="M 130 140 Q 140 130 150 140" stroke="#D4AF37" stroke-width="2" fill="none"/>
+                            <!-- Window in Background -->
+                            <rect x="220" y="40" width="60" height="70" fill="#87CEEB" stroke="#999" stroke-width="2" rx="5"/>
+                            <!-- Caption -->
+                            <text x="150" y="220" text-anchor="middle" font-family="Poppins" font-size="14" font-weight="600" fill="#0F5E9C">Patient Consultation</text>
+                            <text x="150" y="238" text-anchor="middle" font-family="Poppins" font-size="11" fill="#666">Personalized care for every patient</text>
+                        </svg>
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 9 -->
+                <div class="gallery-item" data-filter="operation" data-aos="fade-up" data-aos-delay="800">
+                    <div class="gallery-card">
+                        <svg viewBox="0 0 300 250" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+                            <!-- Background -->
+                            <rect width="300" height="250" fill="#f8f8f8"/>
+                            <!-- Sterilization Cabinet -->
+                            <rect x="30" y="60" width="80" height="100" fill="#C0C0C0" stroke="#999" stroke-width="2" rx="5"/>
+                            <!-- Cabinet Interior -->
+                            <rect x="35" y="70" width="70" height="80" fill="#E8E8E8" stroke="#999" stroke-width="1"/>
+                            <!-- Instrument Compartments -->
+                            <line x1="40" y1="85" x2="100" y2="85" stroke="#999" stroke-width="1"/>
+                            <line x1="40" y1="105" x2="100" y2="105" stroke="#999" stroke-width="1"/>
+                            <line x1="40" y1="125" x2="100" y2="125" stroke="#999" stroke-width="1"/>
+                            <!-- Surgical Instruments Display -->
+                            <rect x="140" y="60" width="100" height="100" fill="#FFF" stroke="#DDD" stroke-width="2" rx="5"/>
+                            <!-- Instruments -->
+                            <rect x="150" y="75" width="8" height="30" fill="#C0C0C0" rx="2"/>
+                            <polygon points="170,75 175,85 165,85" fill="#C0C0C0"/>
+                            <circle cx="190" cy="85" r="6" fill="#C0C0C0"/>
+                            <line x1="160" y1="110" x2="185" y2="125" stroke="#C0C0C0" stroke-width="3" stroke-linecap="round"/>
+                            <!-- Sterilization Indicator -->
+                            <circle cx="250" cy="100" r="25" fill="#228B22" opacity="0.8"/>
+                            <text x="250" y="110" text-anchor="middle" font-family="Poppins" font-size="12" font-weight="600" fill="#FFF">STERILE</text>
+                            <!-- Caption -->
+                            <text x="150" y="220" text-anchor="middle" font-family="Poppins" font-size="14" font-weight="600" fill="#0F5E9C">Sterilization Systems</text>
+                            <text x="150" y="238" text-anchor="middle" font-family="Poppins" font-size="11" fill="#666">Highest safety and hygiene standards</text>
+                        </svg>
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="" id="modalImage" alt="Gallery Image">
+            <div id="imageCaption"></div>
+        </div>
+    </div>
+
+    <!-- Facilities Info Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="section-title text-center mb-16" data-aos="fade-up">Our Facilities</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="facility-info" data-aos="fade-up">
+                    <div class="facility-icon">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h3>Advanced Diagnostic Technology</h3>
+                    <p>High-resolution ultrasound machines, 3D/4D imaging, and advanced diagnostic equipment for accurate assessment and monitoring of gynecological and obstetric conditions.</p>
+                </div>
+
+                <div class="facility-info" data-aos="fade-up" data-aos-delay="100">
+                    <div class="facility-icon">
+                        <i class="fas fa-scalpel"></i>
+                    </div>
+                    <h3>Modern Operating Theatres</h3>
+                    <p>State-of-the-art surgical suites equipped with advanced laparoscopic equipment, surgical lights, and sterilization systems for safe, minimally invasive procedures.</p>
+                </div>
+
+                <div class="facility-info" data-aos="fade-up" data-aos-delay="200">
+                    <div class="facility-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Comfortable Consultation Rooms</h3>
+                    <p>Private, well-designed consultation spaces that provide a welcoming, comfortable environment for patient discussions and examinations.</p>
+                </div>
+
+                <div class="facility-info" data-aos="fade-up" data-aos-delay="300">
+                    <div class="facility-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Sterilization & Safety</h3>
+                    <p>Comprehensive sterilization systems, infection control protocols, and strict hygiene standards to ensure patient safety and prevent cross-contamination.</p>
+                </div>
+
+                <div class="facility-info" data-aos="fade-up" data-aos-delay="400">
+                    <div class="facility-icon">
+                        <i class="fas fa-hospitality"></i>
+                    </div>
+                    <h3>Patient Comfort Areas</h3>
+                    <p>Comfortable waiting areas, refreshment facilities, and amenities designed to make your visit pleasant and stress-free.</p>
+                </div>
+
+                <div class="facility-info" data-aos="fade-up" data-aos-delay="500">
+                    <div class="facility-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Professional Staff</h3>
+                    <p>Experienced nursing staff, medical technicians, and support personnel dedicated to providing excellent patient care and assistance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-[#0F5E9C] via-[#2B7FC4] to-[#00A6A6]" data-aos="fade-up">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-8" style="font-family: 'Playfair Display', serif;">Experience Our Excellence</h2>
+            <p class="text-xl text-white/90 mb-8">Visit our modern facility and experience world-class gynecological care</p>
+            <button class="btn-primary bg-gray-100 text-[#0F5E9C] hover:bg-slate-100" onclick="window.location.href='appointment.html'">
+                Schedule Your Visit
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer"></footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        // Gallery Filter
+        const filterButtons = document.querySelectorAll('.gallery-filter');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                
+                const filter = button.getAttribute('data-filter');
+                galleryItems.forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-filter') === filter) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Gallery Modal
+        const modal = document.getElementById('imageModal');
+        const modalImage = document.getElementById('modalImage');
+        const closeBtn = document.querySelector('.close');
+
+        document.querySelectorAll('.gallery-overlay').forEach(overlay => {
+            overlay.addEventListener('click', function() {
+                const svg = this.previousElementSibling.querySelector('svg');
+                modal.style.display = 'block';
+                // Store the SVG content in the modal
+                modalImage.parentElement.innerHTML = svg.outerHTML;
+            });
+        });
+
+        closeBtn.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+
+        window.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
+
