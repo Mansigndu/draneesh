@@ -38,12 +38,12 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div class="footer-section" data-aos="fade-up" data-aos-delay="200">
                         <h4>Our Services</h4>
                         <ul class="footer-links">
-                            <li><a href="services.html#high-risk">High-Risk Pregnancy</a></li>
-                            <li><a href="services.html#delivery">Normal Delivery</a></li>
-                            <li><a href="services.html#caesarean">Caesarean Section</a></li>
-                            <li><a href="services.html#infertility">Infertility Treatment</a></li>
-                            <li><a href="services.html#laparoscopic">Laparoscopic Surgery</a></li>
-                            <li><a href="services.html#menopause">Menopause Care</a></li>
+                            <li><a href="high-risk-pregnancy.html">High-Risk Pregnancy</a></li>
+                            <li><a href="normal-delivery.html">Normal Delivery</a></li>
+                            <li><a href="caesarean-section.html">Caesarean Section</a></li>
+                            <li><a href="infertility-treatment.html">Infertility Treatment</a></li>
+                            <li><a href="laparoscopic-surgery.html">Laparoscopic Surgery</a></li>
+                            <li><a href="menopause-care.html">Menopause Care</a></li>
                         </ul>
                     </div>
 

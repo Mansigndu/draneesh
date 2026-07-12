@@ -84,14 +84,38 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    const tl = gsap.timeline({ defaults: { duration: 0.9, ease: 'power3.out' } });
-    tl.from('.hero-title', { opacity: 0, y: 30 })
-      .from('.badge-premium', { opacity: 0, scale: 0.92 }, '-=0.6')
-      .from('.hero-actions .btn-primary, .hero-actions .btn-secondary', { opacity: 0, y: 24, stagger: 0.12 }, '-=0.5');
+    if (window.gsap) {
+        const tl = gsap.timeline({ defaults: { duration: 0.9, ease: 'power3.out' } });
+        tl.from('.hero-title', { opacity: 0, y: 30 })
+          .from('.badge-premium', { opacity: 0, scale: 0.92 }, '-=0.6')
+          .from('.hero-actions .btn-primary, .hero-actions .btn-secondary', { opacity: 0, y: 24, stagger: 0.12 }, '-=0.5');
+    }
 
     const buttons = document.querySelectorAll('.btn-primary, .btn-secondary');
     buttons.forEach(button => {
         button.addEventListener('click', createRipple);
+    });
+
+    document.querySelectorAll('[data-link]').forEach(card => {
+        const href = card.getAttribute('data-link');
+        if (!href) return;
+
+        const navigateCard = (event) => {
+            if (event.target.closest('a, button, input, select, textarea')) {
+                return;
+            }
+            window.location.href = href;
+        };
+
+        card.addEventListener('click', navigateCard);
+        card.addEventListener('keydown', (event) => {
+            if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault();
+                window.location.href = href;
+            }
+        });
+        card.setAttribute('tabindex', '0');
+        card.setAttribute('role', 'link');
     });
 
     function createRipple(event) {

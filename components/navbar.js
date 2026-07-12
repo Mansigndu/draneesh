@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <a href="about.html" class="navbar-link">About</a>
                         </li>
                         <li class="navbar-item">
-                            <a href="services.html" class="navbar-link">Specialities</a>
+                            <a href="services.html" class="navbar-link">Services</a>
                         </li>
                         <li class="navbar-item">
                             <a href="gallery.html" class="navbar-link">Gallery</a>
