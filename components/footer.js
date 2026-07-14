@@ -84,32 +84,19 @@ document.addEventListener('DOMContentLoaded', function() {
                 </div>
 
                 <!-- Scroll to Top Button -->
-                <button id="scrollToTopBtn" class="scroll-to-top" title="Back to top">
-                    <i class="fas fa-arrow-up"></i>
-                </button>
+               <a href="https://wa.me/919833966967?text=Hello%20Doctor,%20I%20would%20like%20to%20book%20an%20appointment."
+   class="whatsapp-btn"
+   target="_blank"
+   rel="noopener noreferrer"
+   title="Chat on WhatsApp"
+   aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+</a>
             </div>
         </footer>
     `;
 
     footer.innerHTML = footerHTML;
 
-    const scrollToTopBtn = document.getElementById('scrollToTopBtn');
-
-    if (!scrollToTopBtn) {
-        return;
-    }
-
-    const toggleScrollToTop = () => {
-        scrollToTopBtn.classList.toggle('visible', window.scrollY > 300);
-    };
-
-    window.addEventListener('scroll', toggleScrollToTop, { passive: true });
-    toggleScrollToTop();
-
-    scrollToTopBtn.addEventListener('click', function() {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    });
+   
 });
