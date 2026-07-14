@@ -214,3 +214,18 @@ function enhanceFormValidation() {
 }
 enhanceFormValidation();
 
+document.querySelectorAll(".read-more-btn").forEach((btn) => {
+
+    btn.addEventListener("click", function () {
+
+        const text = this.previousElementSibling;
+
+        text.classList.toggle("expanded");
+
+        this.textContent = text.classList.contains("expanded")
+            ? "Read Less"
+            : "Read More";
+
+    });
+
+});
