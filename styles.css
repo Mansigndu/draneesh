@@ -281,7 +281,7 @@ a:hover {
     top: 0;
     left: 0;
     right: 0;
-    height: 90px;
+    height: 105px;
     z-index: 1100;
     background: rgba(255, 255, 255, 0.96);
     backdrop-filter: blur(18px);
@@ -322,13 +322,13 @@ a:hover {
 }
 
 .logo-icon {
-    width: 68px;
-    height: 68px;
+    width: 82px;
+    height: 82px;
     border-radius: 50%;
     overflow: hidden;
-    background: #ffffff;
-    border: 3px solid #ffffff;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    background: #fff;
+    border: 3px solid #fff;
+    box-shadow: 0 8px 25px rgba(0,0,0,.15);
     flex-shrink: 0;
 }
 
@@ -340,7 +340,7 @@ a:hover {
 }
 
 .logo-text {
-    font-size: clamp(1rem, 1.4vw, 1.45rem);
+    font-size: clamp(1.5rem, 2vw, 2rem);
     font-weight: 700;
     color: var(--primary);
     font-family: 'Playfair Display', serif;
@@ -453,13 +453,13 @@ body.menu-open {
 
 @media (max-width: 992px) {
     .navbar-container {
-        height: 82px;
+        height: 90px;
     }
 
     .logo-icon {
-        width: 58px;
-        height: 58px;
-    }
+    width: 72px;
+    height: 72px;
+}
 
     .navbar-list {
         gap: 5px;
@@ -478,7 +478,7 @@ body.menu-open {
 
 @media (max-width: 768px) {
     .navbar-container {
-        height: 80px;
+        height: 85px;
     }
 
     .navbar-content {
@@ -486,15 +486,13 @@ body.menu-open {
     }
 
     .logo-icon {
-        width: 52px;
-        height: 52px;
-    }
+    width: 60px;
+    height: 60px;
+}
 
-    .logo-text {
-        font-size: 1rem;
-        max-width: 160px;
-        white-space: normal;
-    }
+.logo-text {
+    font-size: 1.2rem;
+}
 
     .navbar-toggle {
         display: flex;
@@ -573,14 +571,13 @@ body.menu-open {
     }
 
     .logo-icon {
-        width: 46px;
-        height: 46px;
-    }
+    width: 54px;
+    height: 54px;
+}
 
-    .logo-text {
-        font-size: 0.88rem;
-        max-width: 120px;
-    }
+.logo-text {
+    font-size: 1rem;
+}
 
     .navbar-cta {
         font-size: 0.85rem;
