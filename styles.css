@@ -276,6 +276,61 @@ a:hover {
    PREMIUM RESPONSIVE NAVBAR
    ===================== */
 
+
+
+@media (max-width: 480px) {
+    .navbar-content {
+        padding: 0 12px;
+    }
+
+    .logo-icon {
+    width: 54px;
+    height: 54px;
+}
+
+.logo-text {
+    font-size: 1rem;
+}
+
+    .navbar-cta {
+        font-size: 0.85rem;
+        padding: 10px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+/* =====================
+   HERO SECTION
+   ===================== */
+
+.hero-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 90vh;
+    background: linear-gradient(180deg, rgba(248, 251, 253, 1) 0%, rgba(231, 247, 251, 1) 100%);
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at top left, rgba(15, 94, 156, 0.12), transparent 28%),
+                radial-gradient(circle at bottom right, rgba(0, 166, 166, 0.1), transparent 26%);
+    pointer-events: none;
+}
 .navbar-container {
     position: fixed;
     top: 0;
@@ -476,23 +531,35 @@ body.menu-open {
     }
 }
 
+
+    
+    /* Tablet */
 @media (max-width: 768px) {
-    .navbar-container {
-        height: 85px;
+
+    .navbar-container{
+        height: 100px;
     }
 
-    .navbar-content {
-        padding: 0 16px;
+    .logo-link{
+        gap: 16px;
     }
 
-    .logo-icon {
-    width: 60px;
-    height: 60px;
-}
+    .logo-icon{
+        width: 80px;
+        height: 80px;
+    }
 
-.logo-text {
-    font-size: 1.2rem;
-}
+    .logo-text{
+        font-size: 1.8rem;
+        font-weight: 700;
+        line-height: 1.2;
+        white-space: nowrap;
+    }
+     .navbar-content {
+        padding:16px;
+    }
+
+   
 
     .navbar-toggle {
         display: flex;
@@ -563,62 +630,33 @@ body.menu-open {
     .appointment-link i {
         margin-right: 8px;
     }
+
 }
 
+/* Mobile */
 @media (max-width: 480px) {
-    .navbar-content {
-        padding: 0 12px;
+
+    .navbar-container{
+        height: 95px;
     }
 
-    .logo-icon {
-    width: 54px;
-    height: 54px;
-}
+    .logo-link{
+        gap: 12px;
+    }
 
-.logo-text {
-    font-size: 1rem;
-}
+    .logo-icon{
+        width: 72px;
+        height: 72px;
+    }
 
-    .navbar-cta {
-        font-size: 0.85rem;
-        padding: 10px;
+    .logo-text{
+        font-size: 1.5rem;
+        font-weight: 700;
+        white-space: nowrap;
     }
 }
 
-@media (prefers-reduced-motion: reduce) {
-    html {
-        scroll-behavior: auto;
-    }
-
-    *, *::before, *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-    }
-}
-/* =====================
-   HERO SECTION
-   ===================== */
-
-.hero-section {
-    position: relative;
-    display: flex;
-    align-items: center;
-    min-height: 90vh;
-    background: linear-gradient(180deg, rgba(248, 251, 253, 1) 0%, rgba(231, 247, 251, 1) 100%);
-    overflow: hidden;
-}
-
-.hero-section::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(circle at top left, rgba(15, 94, 156, 0.12), transparent 28%),
-                radial-gradient(circle at bottom right, rgba(0, 166, 166, 0.1), transparent 26%);
-    pointer-events: none;
-}
-
+   
 .hero-panel {
     position: relative;
     z-index: 2;
@@ -635,6 +673,7 @@ body.menu-open {
     border-radius: 999px;
     font-weight: 600;
     font-size: 0.95rem;
+    margin-bottom: 15px;
 }
 
 .hero-title {
