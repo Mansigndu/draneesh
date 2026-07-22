@@ -459,6 +459,7 @@ a:hover {
 .navbar-cta:hover {
     transform: translateY(-2px);
     box-shadow: 0 12px 30px rgba(15, 94, 156, 0.25);
+    color: #fff;
 }
 
 .navbar-toggle {
